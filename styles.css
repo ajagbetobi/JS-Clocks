@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@600&family=Orbitron:wght@600&display=swap");
+
+html {
+  background: #018ded;
+  background-size: cover;
+  font-family: "helvetica neue";
+  text-align: center;
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+.clock {
+  width: 30rem;
+  height: 30rem;
+  border: 20px solid white;
+  border-radius: 20%;
+  margin: 50px auto;
+  position: relative;
+  padding: 2rem;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef,
+    inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.hand {
+  width: 50%;
+  height: 6px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.digital {
+  width: 50vw;
+  height: 20rem;
+  background-color: rgb(26, 25, 25);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.digital > * {
+  width: 30%;
+  height: 90%;
+
+  font-size: 12rem;
+  color: antiquewhite;
+  font-family: "Orbitron", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
